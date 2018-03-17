@@ -1,0 +1,25 @@
+{
+  "name": "online-exam",
+  "version": "1.0.0",
+  "description": "Python vs node.js server tutorial",
+  "main": "server-node/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RedHope/python-node-server.git"
+  },
+  "author": "Anurag Sharma <mrshanksser@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RedHope/python-node-server/issues"
+  },
+  "homepage": "https://github.com/RedHope/python-node-server#readme",
+  "dependencies": {
+    "express": "4.16.3",
+    "lodash": "4.17.5",
+    "pg": "^7.4.1",
+    "rc": "^1.2.6"
+  }
+}
