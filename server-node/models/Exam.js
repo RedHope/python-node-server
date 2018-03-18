@@ -6,14 +6,8 @@ const Exams = sequelize.define("exam", {
   description: Sequelizeer.STRING
 });
 
-console.log('exams');
+console.log("exams");
 
-Exams.sync({force: true}).then(() => {
-  return Exams.create({
-    title: "Sequelize Exam",
-    description: "Created with Node js",
-    last_updated_by: "Sequelize"
-  });
-});
+Exams.sync({ force: false });
 
 module.exports = Exams;
