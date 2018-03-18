@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/RedHope/python-node-server#readme",
   "dependencies": {
+    "body-parser": "^1.18.2",
     "express": "4.16.3",
     "lodash": "4.17.5",
     "pg": "^7.4.1",

@@ -1,7 +1,12 @@
 const express = require("express");
-const db = require('./models/Exam');
 
 const app = express();
+const router = express.Router();
+
+app.use(require('body-parser').json());
+router.use('/', require('./controllers/exams'));
+
+app.use(router);
 
 app.get("/", (req, res) => {
   res.send("Hello World");

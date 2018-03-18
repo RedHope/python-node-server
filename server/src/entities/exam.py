@@ -21,6 +21,6 @@ class ExamSchema(Schema):
     id = fields.Number()
     title = fields.Str()
     description = fields.Str()
-    created_at = fields.DateTime()
-    update_at = fields.DateTime()
+    createdAt = fields.DateTime()
+    updatedAt = fields.DateTime()
     last_update_by = fields.Str()
