@@ -14,21 +14,17 @@ export class AppComponent implements AfterViewInit {
     const canvas = <HTMLCanvasElement>this.canvasref.nativeElement;
     const cnt = canvas.getContext("2d");
     canvas.style.border = "1px solid";
-
     cnt.fillStyle = "rgb(200, 0, 0)";
-    cnt.fillRect(10, 10, 50, 50);
-
-    cnt.fillStyle = "rgba(0, 0, 200, 0.5)";
-    cnt.fillRect(30, 30, 50, 50);
-
-    cnt.fillRect(90, 90, 60, 60);
-    cnt.clearRect(100, 100, 40, 40);
-    cnt.strokeRect(105, 105, 30, 30);
-
+    
+    // heart shape
     cnt.beginPath();
-    cnt.moveTo(75, 75);
-    cnt.lineTo(100, 75);
-    cnt.lineTo(100, 25);
+    cnt.moveTo(75, 40);
+    cnt.bezierCurveTo(75, 37, 70, 25, 50, 25);
+    cnt.bezierCurveTo(20, 25, 20, 62.5, 20, 62.5);
+    cnt.bezierCurveTo(20, 80, 40, 102, 75, 120);
+    cnt.bezierCurveTo(110, 102, 130, 80, 130, 62.5);
+    cnt.bezierCurveTo(130, 62.5, 130, 25, 100, 25);
+    cnt.bezierCurveTo(85, 25, 75, 37, 75, 40);
     cnt.fill();
   }
 }
